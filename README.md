@@ -6,7 +6,7 @@
 ## TL;DR;
 
 ```bash
-helm repo add verdaccio-gke-charts https://xlts-dev.github.io/verdaccio-gke-charts
+helm repo add verdaccio-gke-charts https://devintent.github.io/verdaccio-gke-charts/
 helm repo update
 helm install verdaccio-gke-charts/verdaccio-gke-charts
 ```
@@ -35,7 +35,7 @@ deployment on a [Kubernetes](https://kubernetes.io) cluster using the
 ### Add repository
 
 ```bash
-helm repo add verdaccio-gke-charts https://xlts-dev.github.io/verdaccio-gke-charts
+helm repo add verdaccio-gke-charts https://devintent.github.io/verdaccio-gke-charts
 ```
 
 ### Install Verdaccio chart
