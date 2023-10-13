@@ -2,6 +2,33 @@ apiVersion: v1
 entries:
   devintent-verdaccio-gke-charts:
   - apiVersion: v2
+    appVersion: 5.24.1
+    created: "2023-10-13T23:11:09.20910509Z"
+    description: A lightweight, private NPM proxy registry for GKE
+    digest: db5b4fe91a962414bca781022a19ad88d4dc64f288896632e2b02ccad6356859
+    home: https://devintent.github.io/verdaccio-gke-charts/
+    icon: https://cdn.verdaccio.dev/logos/default.png
+    keywords:
+    - npm
+    - registry
+    - yarn
+    - pnpm
+    - javascript
+    - nodejs
+    maintainers:
+    - email: michael@devintent.com
+      name: splaktar
+    - email: ed@devintent.com
+      name: edclement
+    name: devintent-verdaccio-gke-charts
+    sources:
+    - https://verdaccio.org
+    - https://github.com/verdaccio/verdaccio
+    - https://github.com/DevIntent/verdaccio-gke-charts
+    urls:
+    - https://github.com/DevIntent/verdaccio-gke-charts/releases/download/devintent-verdaccio-gke-charts-0.5.0/devintent-verdaccio-gke-charts-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
     appVersion: 5.0.4
     created: "2021-05-17T06:57:49.32544571Z"
     description: A lightweight, private NPM proxy registry for GKE
@@ -52,4 +79,4 @@ entries:
     urls:
     - https://github.com/DevIntent/verdaccio-gke-charts/releases/download/verdaccio-gke-charts-0.4.0/verdaccio-gke-charts-0.4.0.tgz
     version: 0.4.0
-generated: "2023-10-13T17:01:29.241813806Z"
+generated: "2023-10-13T23:11:09.20911259Z"
