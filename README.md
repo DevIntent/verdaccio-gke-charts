@@ -8,7 +8,7 @@
 ```bash
 helm repo add verdaccio-gke-charts https://devintent.github.io/verdaccio-gke-charts/
 helm repo update
-helm install verdaccio-gke-charts/verdaccio-gke-charts
+helm install verdaccio-gke-charts/devintent-verdaccio-gke-charts
 ```
 
 ## Introduction
@@ -44,19 +44,19 @@ In this example we use `npm` as release name:
 
 ```bash
 # Helm v3+
-helm install npm --namespace registry verdaccio-gke-charts/verdaccio-gke-charts
+helm install npm --namespace registry verdaccio-gke-charts/devintent-verdaccio-gke-charts
 ```
 
 ### Deploy a specific Verdaccio version
 
 ```bash
-helm install npm --set image.tag=4.6.2 verdaccio-gke-charts/verdaccio-gke-charts
+helm install npm --set image.tag=4.6.2 verdaccio-gke-charts/devintent-verdaccio-gke-charts
 ```
 
 ### Upgrading Verdaccio
 
 ```bash
-helm upgrade npm --namespace registry verdaccio-gke-charts/verdaccio-gke-charts
+helm upgrade npm --namespace registry verdaccio-gke-charts/devintent-verdaccio-gke-charts
 ```
 
 The command deploys Verdaccio on the GKE cluster in the default
@@ -147,7 +147,7 @@ and their default values.
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
 ```bash
-helm install my-release --set service.type=LoadBalancer verdaccio-gke-charts/verdaccio-gke-charts
+helm install my-release --set service.type=LoadBalancer verdaccio-gke-charts/devintent-verdaccio-gke-charts
 ```
 
 The above command sets the service type `LoadBalancer`.
@@ -156,7 +156,7 @@ Alternatively, a YAML file that specifies the values for the above parameters
 can be provided while installing the chart. For example,
 
 ```bash
-helm install my-release -f values.yaml verdaccio-gke-charts/verdaccio-gke-charts
+helm install my-release -f values.yaml verdaccio-gke-charts/devintent-verdaccio-gke-charts
 ```
 
 > **Tip**: You can use the default [values.yaml](charts/verdaccio/values.yaml) as a starting point.
@@ -189,5 +189,5 @@ It is possible to mount several volumes using `Persistence.volumes` and
 ```bash
 helm install npm \
     --set persistence.existingClaim=PVC_NAME \
-    verdaccio-gke-charts/verdaccio-gke-charts
+    verdaccio-gke-charts/devintent-verdaccio-gke-charts
 ```
