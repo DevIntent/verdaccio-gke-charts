@@ -24,7 +24,7 @@ spec:
     rollingUpdate:
       # The maximum number of pods that can be unavailable during a rolling update. Setting this value higher than zero
       # seems to help trigger 502 errors from the GCP container native ingress load balancer.
-      # Refer to: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#rollingupdatedeployment-v1-apps
+      # Refer to: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#rollingupdatedeployment-v1-apps
       maxUnavailable: 0
     {{- end }}
   template:
