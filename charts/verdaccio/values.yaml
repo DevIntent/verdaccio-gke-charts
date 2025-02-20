@@ -1,6 +1,6 @@
 image:
   repository: verdaccio/verdaccio
-  tag: 5.27.0
+  tag: 6.0.5
   pullPolicy: IfNotPresent
   pullSecrets: []
     # - dockerhub-secret
